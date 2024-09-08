@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&W Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo_march_7.gif">
+</head>
+
+<body id="heightCancel">
+    <header>
+        <h1>
+            <a href="index.html" class="textDecNone textShadow">
+                Soowahlie Health & Wellness Survey
+            </a>
+        </h1>
+    </header>
+
+    <main>
+        <form method="post" action="https://formsubmit.co/joeltkelly@hotmail.com finished.html">
+            <div class="mainParagraphs mainPSpacing">
+                <div class="topMargin">
+                    <label for="age" class="bold">
+                        What is your age?
+                    </label>
+                    <input list="age" name="Age Range" required>
+                    <datalist id="age" name="ageRange">
+                        <option value="16-21">16-21</option>
+                        <option value="22-30">22-30</option>
+                        <option value="31-64">31-64</option>
+                        <option value="65 and above">65 and above</option>
+                    </datalist>
+                </div>
+    
+                <div>
+                    <h2>Do you live within the community?</h2>
+                    <input type="radio" id="yes" name="Within Community" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="Within Community" value="no" required>
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <div class="mainParagraphs mainPSpacing surveyQuestions" id="q3">
+                <h2 class="center">
+                    Do you know what programs/ services are offered by the Soowahlie Health Office and Band Office?
+                    (Select all the options that you are aware of.)
+                </h2>
+
+                <div>
+                    <input type="checkbox" id="mg" class="HOservices" name="Mens Group" value="checked">
+                    <label for="mg">Men's Group</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="wg" class="HOservices" name="Womens Group" value="checked">
+                    <label for="wg">Women's Group</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="eg" name="Elders Group" value="checked">
+                    <label for="eg">Elder's Group</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="babyProgram" name="Baby Program" value="checked">
+                    <label for="babyProgram">Baby Program</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="pg" name="Parent Group" value="checked">
+                    <label for="pg">Parent Group</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="hcs" name="Home Care Services" value="checked">
+                    <label for="hcs">Home Care Services (Home Maker)</label>    
+                </div>
+
+                <div>
+                    <input type="checkbox" id="ns" name="Nurse Services" value="checked">
+                    <label for="ns">Nurse Services</label>    
+                </div>
+
+                <div>
+                    <div>
+                        <input type="checkbox" id="Diabetes" name="Diabetes" value="checked">
+                        <label for="Diabetes">Diabetes</label>    
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Home Care" name="Home Care" value="checked">
+                        <label for="Home Care">Home Care</label>    
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Parental Care" name="Parental Care" value="checked">
+                        <label for="Parental Care">Parental Care</label>    
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="immunization" name="Immunization" value="checked">
+                        <label for="immunization">immunization</label>    
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="np" name="Nutrition Program" value="checked">
+                    <label for="np">Nutrition Program</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="wp" name="Water Program" value="checked">
+                    <label for="wp">Water Program</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="massage" name="Massages" value="checked">
+                    <label for="massage">Massages</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="fc" name="Foot Care" value="checked">
+                    <label for="fc">Foot Care</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="yogaProgram" name="Yoga Program" value="checked">
+                    <label for="yogaProgram">Yoga Program</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="youthProgram" name="Youth Program" value="checked">
+                    <label for="youthProgram">Youth Program</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="kc" name="kids Club" value="checked">
+                    <label for="kc">Kid's Club</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="bc" name="Book Club" value="checked">
+                    <label for="bc">Book Club</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="pb" name="Pancake Breakfast" value="checked">
+                    <label for="pb">Pancake Breakfast</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="cn" name="Craft Night" value="checked">
+                    <label for="cn">Craft Night</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="housing" name="Housing" value="checked">
+                    <label for="housing">Housing</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="lands" name="Lands" value="checked">
+                    <label for="lands">Lands</label>    
+                </div>
+
+                <div>
+                    <input type="checkbox" id="education" name="Education" value="checked">
+                    <label for="education">Education</label>    
+                </div>
+
+                <div>
+                    <div>
+                        <input type="checkbox" id="tutoring" name="Tutoring Reimbursement" value="checked">
+                        <label for="tutoring">Tutoring reimbursement (on reserve only)</label>    
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="psf" name="psFunding" value="checked">
+                        <label for="psf">Post-Secondary Funding</label>    
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="bbq" name="btsBBQ" value="checked">
+                        <label for="bbq">Back-To-School BBQ</label>    
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ssf" name="SchoolSupplyFunding" value="checked">
+                        <label for="ssf">School Supply Funding</label>    
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="fs" name="Family Snacks" value="checked">
+                    <label for="fs">Family Snacks for School</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="sa" name="Social Assistance" value="checked">
+                    <label for="sa">Social Assistance</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="ep" name="Emergency Preparedness" value="checked">
+                    <label for="ep">Emergency Preparedness</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="gr" name="Garbage Run" value="checked">
+                    <label for="gr">Garbage Run</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="na" name="None" value="checked">
+                    <label for="na">I am not aware of any these programs or services.</label>    
+                </div>
+            </div>
+
+            <div class="mainParagraphs mainPSpacing surveyQuestions" id="q4">
+                <h2 class="center">
+                    Do you know what cultural services are offered by Soowahlie?
+                </h2>
+
+                <div>
+                    <input type="checkbox" id="pc" name="Puberty Camp" value="checked">
+                    <label for="pc">Puberty Camp</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="hc" name="Honoring Ceremony" value="checked">
+                    <label for="hc">Honoring Ceremony</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="burnings" name="Burnings" value="checked">
+                    <label for="burnings">Burnings</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="sc" name="Salmon Ceremony" value="checked">
+                    <label for="sc">Salmon Ceremony</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="famcamp" name="Family Camp" value="checked">
+                    <label for="famcamp">Family Camp</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="nmw" name="Natural Medicine Workshop" value="checked">
+                    <label for="nmw">Natural Medicine Workshop</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="mm" name="Medicine Making" value="checked">
+                    <label for="mm">Medicine Making</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="cpf" name="Canning/Preserving" value="checked">
+                    <label for="cpf">Canning/ Preserving Foods</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="cg" name="Cedar Gathering" value="checked">
+                    <label for="cg">Cedar Gathering</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="weaving" name="Weaving" value="checked">
+                    <label for="weaving">Weaving</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="cp" name="Canoe Pulling" value="checked">
+                    <label for="cp">Canoe Pulling</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="st" name="Story Telling" value="checked">
+                    <label for="st">Story Telling</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="lh" name="Longhouse" value="checked">
+                    <label for="lh">Longhouse</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="sweats" name="Sweats" value="checked">
+                    <label for="sweats">Sweats</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="bs" name="Brushing/Smudging" value="checked">
+                    <label for="bs">Brushing/ Smudging</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="hs" name="Harvesting Sage" value="checked">
+                    <label for="hs">Harvesting Sage</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="naII" name="None" value="checked">
+                    <label for="naII">I am not familiar with any of these cultural services</label>    
+                </div>
+            </div>
+
+            <div class="mainParagraphs mainPSpacing surveyQuestions">
+                <h2 class="center">
+                    Are you receiving the information you need to participate in community events, programs, and services?
+                </h2>
+
+                <div>
+                    <input type="radio" id="veryMuch" name="Receiving Info" value="Big Yes" required>
+                    <label for="veryMuch">I am aware of most.</label>    
+                </div>
+                <div>
+                    <input type="radio" id="somewhat" name="Receiving Info" value="Yes" required>
+                    <label for="somewhat">I am aware of some.</label>    
+                </div>
+                <div>
+                    <input type="radio" id="middle" name="Receiving Info" value="Somewhat" required>
+                    <label for="middle">I keep updated on ones important to me.</label>    
+                </div>
+                <div>
+                    <input type="radio" id="notMuch" name="Receiving Info" value="No" required>
+                    <label for="notMuch">I am not aware of some.</label>    
+                </div>
+                <div>
+                    <input type="radio" id="bigNo" name="Receiving Info" value="Big No" required>
+                    <label for="bigNo">I am not aware of most.</label>    
+                </div>
+            </div>
+
+            <div class="mainParagraphs mainPSpacing surveyQuestions" id="q6">
+                <h2 class="center">
+                    How would you like to access/ receive information? How could communication be improved?
+                </h2>
+
+                <div>
+                    <input type="checkbox" id="nf" name="Newsletter/Flyer" value="checked">
+                    <label for="nf">Newsletter/ Flyer</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="mail" name="Mail" value="checked">
+                    <label for="mail">Mail</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="em" name="Email" value="checked">
+                    <label for="em">Email</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="fbcm" name="Community Member" value="checked">
+                    <label for="fbcm">Facebook (Community and Member Pages)</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="wm" name="Word Of Mouth" value="checked">
+                    <label for="wm">Word of Mouth</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="ffn" name="Fam Fri Nei" value="checked">
+                    <label for="ffn">Family, Friend, Neighbor</label>    
+                </div>
+                <div>
+                    <input type="checkbox" id="pe" name="Program Events" value="checked">
+                    <label for="pe">From a program/ event</label>    
+                </div>
+
+                <textarea name="improveCommunication" rows="10" cols="30" placeholder="Type your response here." class="textareabox marginTB"></textarea>
+            </div>
+
+            <div class="mainParagraphs mainPSpacing">
+                <h2>
+                    What is something you want to see Soowahlie prioritize in the Health and Wellness Plan?
+                </h2>
+
+                <textarea name="priortyOnHnWPlan" rows="10" cols="30" placeholder="Type your response here." class="textareabox"></textarea>
+            </div>
+
+            <div class="mainParagraphs mainPSpacing">
+                <h2>
+                    Do you have any other comments or feedback you would like to share?
+                </h2>
+
+                <textarea name="generalFeedback" rows="10" cols="30" placeholder="Type your response here." class="textareabox"></textarea>
+            </div>
+
+            <button type="submit" id="SurveyForm" class="button bold" onclick="validateform()">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="bold">
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="privacy.html">
+                Privacy
+            </a>
+        </div>
+
+        <div>
+            <p>
+                Soowahlie First Nation © 2024 All Rights Reserved
+            </p>
+    
+            <p>
+                Designed and Maintained by Band Member Joel Kelly
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="scripts.js"></script>
+</html>
