@@ -22,7 +22,7 @@
             <div class="mainParagraphs mainPSpacing">
                 <div class="topMargin">
                     <label for="age" class="bold">
-                        What is your age?
+                        1. What is your age?
                     </label>
                     <input list="ageRange" id="age" name="Age Range" required>
                     <datalist id="ageRange">
@@ -34,7 +34,7 @@
                 </div>
     
                 <div>
-                    <h2>Do you live within the community?</h2>
+                    <h2>2. Do you live within the community?</h2>
                     <input type="radio" id="yes" name="Within Community" value="yes" required>
                     <label for="yes">Yes</label>
                     <input type="radio" id="no" name="Within Community" value="no" required>
@@ -44,7 +44,7 @@
 
             <div class="mainParagraphs mainPSpacing surveyQuestions" id="q3">
                 <h2 class="center">
-                    Do you know what programs/ services are offered by the Soowahlie Health Office and Band Office?
+                    3. Do you know what programs/ services are offered by the Soowahlie Health Office and Band Office?
                     (Select all the options that you are aware of.)
                 </h2>
 
@@ -200,7 +200,7 @@
 
             <div class="mainParagraphs mainPSpacing surveyQuestions" id="q4">
                 <h2 class="center">
-                    Do you know what cultural services are offered by Soowahlie?
+                    4. Do you know what cultural services are offered by Soowahlie?
                 </h2>
 
                 <div>
@@ -275,7 +275,7 @@
 
             <div class="mainParagraphs mainPSpacing surveyQuestions">
                 <h2 class="center">
-                    Are you receiving the information you need to participate in community events, programs, and services?
+                    5. Are you receiving the information you need to participate in community events, programs, and services?
                 </h2>
 
                 <div>
@@ -302,7 +302,7 @@
 
             <div class="mainParagraphs mainPSpacing surveyQuestions" id="q6">
                 <h2 class="center">
-                    How would you like to access/ receive information? How could communication be improved?
+                    6. How would you like to access/ receive information? How could communication be improved?
                 </h2>
 
                 <div>
@@ -339,7 +339,7 @@
 
             <div class="mainParagraphs mainPSpacing">
                 <h2>
-                    What is something you want to see Soowahlie prioritize in the Health and Wellness Plan?
+                    7. What is something you want to see Soowahlie prioritize in the Health and Wellness Plan?
                 </h2>
 
                 <textarea name="priortyOnHnWPlan" rows="10" cols="30" placeholder="Type your response here." class="textareabox"></textarea>
@@ -347,14 +347,43 @@
 
             <div class="mainParagraphs mainPSpacing">
                 <h2>
-                    Do you have any other comments or feedback you would like to share?
+                    8. Do you have any other comments or feedback you would like to share?
                 </h2>
 
                 <textarea name="generalFeedback" rows="10" cols="30" placeholder="Type your response here." class="textareabox"></textarea>
             </div>
 
-            <button type="button" id="SurveyForm" class="button bold" onclick="validateform()">Next</button>
+            <button type="submit" id="SurveyForm" class="button bold" onclick="validateform()">Next</button>
         </form>
+
+        <div class="mainParagraphs mainPSpacing hidden" id="finishPopUp">
+            <h3>
+                Thank you for participating in the Survey!
+            </h3>
+
+            <p>
+                Your feedback is greatly appreciated.
+            </p>
+
+            <p>
+                One last step in completing the survey is to hit the submit button at the bottom of this page. <br>
+                This will open a third-party application called FormSubmit. It may take a moment to load, but you will be prompted with a CAPTCHA to verify it is a person submitting the form. 
+            </p>
+
+            <p>
+                As a bonus for completing the survey, you can go to the Soowahlie Health Office for a small gift card. 
+            </p>
+
+            <p>
+                All you have to do is take a screenshot of this page and go to the Health Office with it or contact someone on the Health and Wellness Committee.
+            </p>
+
+            <p>
+                You can also enter into a draw for bonus prizes when you come into the Health Office. More info in the about section.
+            </p>
+
+            <button type="submit" form="HnWform" class="button bold">Submit</button>
+        </div>
     </main>
 
     <footer>

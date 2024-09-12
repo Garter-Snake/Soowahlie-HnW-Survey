@@ -119,6 +119,7 @@ main {
     padding: 6px;
     font-size: 28px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .textareabox {
@@ -130,6 +131,10 @@ main {
 .marginTB {
     margin-top: 12px;
     margin-bottom: 8px;
+}
+
+.hidden {
+    display: none;
 }
 
 

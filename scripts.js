@@ -1,3 +1,26 @@
+function addHidden()
+{
+  const form = document.getElementById("HnWform");
+  const popUp = document.getElementById("finishPopUp");
+  form.classList.toggle("hidden");
+  popUp.classList.toggle("hidden");
+}
+
+function submitCancel(e)
+{
+  const checkHidden = document.getElementById("HnWform");
+  const pause = document.getElementById("SurveyForm");
+
+  if 
+  (checkHidden.classList.contains("hidden")) {
+    pause.preventDefault();
+    return;
+  } 
+  else {
+    pause.preventDefault();
+  }
+}
+
 function validateQ3()
 {
     document.getElementById("mg").setCustomValidity ('');
@@ -65,8 +88,8 @@ function validateQ6()
 
     if
     (INFOarray.length > 0) {
-            location.replace("finished.html")
-            return;
+            addHidden();
+            return false;
         }
     else
     document.getElementById('SurveyForm').addEventListener('submit', function(event) {
