@@ -65,7 +65,7 @@ function validateQ6()
 
     if
     (INFOarray.length > 0) {
-            location.replace(finished.html)
+            location.replace("finished.html")
             return;
         }
     else
