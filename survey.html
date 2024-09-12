@@ -21,24 +21,24 @@
         <form method="post" action="https://formsubmit.co/joeltkelly@hotmail.com" id="HnWform">
             <div class="mainParagraphs mainPSpacing">
                 <div class="topMargin">
-                    <label for="age" class="bold">
+                    <label for="q1" class="bold">
                         1. What is your age?
                     </label>
-                    <input list="ageRange" id="age" name="Age Range" required>
-                    <datalist id="ageRange">
+                    <select list="ageRange" id="q1" name="Age Range" required>
+                        <option value="">--</option>
                         <option value="16-21">16-21</option>
                         <option value="22-30">22-30</option>
                         <option value="31-64">31-64</option>
                         <option value="65 and above">65 and above</option>
-                    </datalist>
+                    </select>
                 </div>
     
                 <div>
                     <h2>2. Do you live within the community?</h2>
-                    <input type="radio" id="yes" name="Within Community" value="yes" required>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="Within Community" value="no" required>
-                    <label for="no">No</label>
+                    <input type="radio" id="q2yes" name="Within Community" value="yes" required>
+                    <label for="q2yes">Yes</label>
+                    <input type="radio" id="q2no" name="Within Community" value="no" required>
+                    <label for="q2no">No</label>
                 </div>
             </div>
 
@@ -353,7 +353,7 @@
                 <textarea name="generalFeedback" rows="10" cols="30" placeholder="Type your response here." class="textareabox"></textarea>
             </div>
 
-            <button type="submit" id="SurveyForm" class="button bold" onclick="validateform()">Next</button>
+            <button type="button" id="SurveyForm" class="button bold" onclick="validateform()">Next</button>
         </form>
 
         <div class="mainParagraphs mainPSpacing hidden" id="finishPopUp">
@@ -382,11 +382,11 @@
                 You can also enter into a draw for bonus prizes when you come into the Health Office. More info in the about section.
             </p>
 
-            <button type="submit" form="HnWform" class="button bold">Submit</button>
+            <input type="submit" form="HnWform" class="button bold"></input>
         </div>
     </main>
 
-    <footer>
+    <footer id="surveyFooter">
         <div class="bold">
             <a href="index.html">
                 Home

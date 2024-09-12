@@ -4,20 +4,42 @@ function addHidden()
   const popUp = document.getElementById("finishPopUp");
   form.classList.toggle("hidden");
   popUp.classList.toggle("hidden");
+
+  if (window.innerWidth > 640) {
+
+    document.getElementById("surveyFooter").style.position = "absolute";
+    document.getElementById("surveyFooter").style.width = "100%";
+    document.getElementById("surveyFooter").style.bottom = "0";
+  }
 }
 
-function submitCancel(e)
-{
-  const checkHidden = document.getElementById("HnWform");
-  const pause = document.getElementById("SurveyForm");
 
-  if 
-  (checkHidden.classList.contains("hidden")) {
-    pause.preventDefault();
+function validateQ1()
+{
+  const check = document.getElementById("q1");
+    if (check.value == "16-21") {
+      validateQ2();
+    } else if (check.value == "22-30") {
+      validateQ2();
+    } else if (check.value == "31-64") {
+      validateQ2();
+    } else if (check.value == "65 and above") {
+      validateQ2();
+    } else {
+      alert('Please select an option for question 1.');
+      return;
+    }
+}
+
+function validateQ2()
+{
+  if (document.getElementById("q2yes").checked) {
+    validateQ3();
+  } else if (document.getElementById("q2no").checked) {
+    validateQ3();
+  } else {
+    alert('Please select an option for question 2.');
     return;
-  } 
-  else {
-    pause.preventDefault();
   }
 }
 
@@ -40,9 +62,10 @@ function validateQ3()
     }
     else
     document.getElementById('SurveyForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+      event.preventDefault();
       });
 
+    alert('At least one box needs to be selected for question 3.')
     document.getElementById("mg").setCustomValidity ('Please select one of the options that apply to you.');
     return;
 }
@@ -61,7 +84,7 @@ function validateQ4()
 
     if
     (BOarray.length > 0) {
-        validateQ6();
+        validateQ5();
         return;
     }
     else
@@ -69,9 +92,32 @@ function validateQ4()
         event.preventDefault();
       });
 
+    alert('At least one box needs to be selected for question 4.')
     document.getElementById("pc").setCustomValidity ('Please select one of the options that apply to you.');
     return;
 
+}
+
+function validateQ5() {
+  if (document.getElementById("veryMuch").checked) {
+    validateQ6();
+    console.log('1');
+  } else if (document.getElementById("somewhat").checked) {
+    validateQ6();
+    console.log('2');
+  } else if (document.getElementById("middle").checked) {
+    validateQ6();
+    console.log('3');
+  } else if (document.getElementById("notMuch").checked) {
+    validateQ6();
+    console.log('4');
+  } else if (document.getElementById("bigNo").checked) {
+    validateQ6();
+    console.log('5');
+  } else {
+    alert('Please select an option for question 5.');
+    return;
+  }
 }
 
 function validateQ6()
@@ -89,13 +135,14 @@ function validateQ6()
     if
     (INFOarray.length > 0) {
             addHidden();
-            return false;
+            return;
         }
     else
     document.getElementById('SurveyForm').addEventListener('submit', function(event) {
         event.preventDefault();
       });
-
+    
+    alert('At least one box needs to be selected for question 6.');
     document.getElementById("nf").setCustomValidity ('Please select one of the options that apply to you.');
     return;
 
@@ -103,5 +150,5 @@ function validateQ6()
 
 function validateform()
 {
-    validateQ3();
+    validateQ1();
 }
